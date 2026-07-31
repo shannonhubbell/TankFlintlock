@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Cinzel:wght@400..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  --background-color: #222831;
+  --copy-color: #eeeeee;
+  --highlight-color: #0092ca;
+  --dim-color: #393e46;
+  background: var(--background-color);
+  font-family: "Google Sans", sans-serif;
+  color: var(--copy-color);
+  font-size: 20px;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+pre {
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Monaco, Consolas, monospace;
+  font-size: 16px;
+  padding: 15px;
+  background: var(--dim-color);
+}
+
+a {
+  color: var(--highlight-color);
+  border-bottom: 1px dotted var(--highlight-color);
+  font-weight: bold;
+  &:hover {
+    text-decoration: none;
+  }
+  &.color-copy {
+    color: var(--copy-color);
+  	border-bottom: 1px dotted var(--copy-color);
+  }
+}
+
+strong {
+  color: #FFF;
+}
+
+h1 {
+  font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 4rem;
+  line-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-family: "Google Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 140%;
+  margin: 0;
+  padding: 0;
+  color: var(--highlight-color);
+}
+h3 {
+  font-family: "Google Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 140%;
+  margin: 0;
+  padding: 0;
+	&.dim {
+      color: var(--dim-color);
+  }
+}
+
+img {
+  max-width: 100%;
+  &.home-banner {
+    border: 1px solid var(--copy-color);
+  }
