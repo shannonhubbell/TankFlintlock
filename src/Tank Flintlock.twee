@@ -15,43 +15,6 @@ Tank Flintlock
   "zoom": 1
 }
 
-
-:: "I'm Tank Flintlock." [Benny] {"position":"950,250","size":"100,100"}
-/* TK */
-
-Benny: "Tank Flintlock! That's a heck of a name. Do you prefer Tank? Or Flintlock?"
-
-[["Call me Tank."|Moving On]]
-[["Call me Flintlock."|Moving On][$player.pref to "Flintlock"]]
-[["I said Tank Flintlock."|Moving On][$player.pref to "Tank Flintlock"]]
-
-
-:: "Resort ambassador?" [Benny] {"position":"1000,100","size":"100,100"}
-/* TK */
-
-Benny describes themself.
-
-"And who are you?"
-<<set $player = {
-full: "Tank Flintlock",
-first: "Tank",
-last: "Flintlock",
-pref: "Tank"
-}>>
-[["I'm Tank Flintlock."]]
-[[Come up with alias.]]
-
-
-:: About {"position":"25,250","size":"100,100"}
-!About
-
-''Tank Flintlock'' is a text-based work of interactive science fiction. 
-
-TK: description of save games, where to start, etc.
-
-[[Back|Start Screen]] 
-
-
 :: Arrive in Pontchartrain Beach {"position":"575,350","size":"200,200"}
 You emerge from the jungle into ''Pontchartrain Beach'', a small town built out of the ruins of an abandoned water park. You are initially in the central market area, at the "shore" of the ''deactivated wave pool''.
 
@@ -69,28 +32,6 @@ There is a ''mysterious figure'' in the crowd.
 [[Look at wave pool.]]
 
 
-
-:: Come up with alias. {"position":"1200,125","size":"100,100"}
-/*
-Need to add form validation
-*/
-"What's your first name?" <<textbox "$player.first" $player.first>>
-
-"What's your last name?" <<textbox "$player.last" $player.last>>
-
-"What do you prefer to be called?" <<textbox "$player.pref" $player.pref>>
-
-<<button "Tell Benny" "Moving On">>
-<<set $player.full to $player.first.trim() + " " + $player.last.trim() >>
-<</button>>
-
-
-:: INTRO: Benny {"position":"750,25","size":"200,200"}
-"I'm Beignet!" says the crab, clearly very happy to see you. "But you can call me Benny if you like! I'm a Resort Ambassador and I'm here to help you enjoy your stay here in Ostia!"
-
-[["Resort ambassador?"]]
-
-
 :: Look at crowd. {"position":"875,800","size":"100,100"}
 
 
@@ -106,42 +47,7 @@ The suspicious figure looks back. Then vanishes into the crowd. Weird.
 :: Look at wave pool. {"position":"525,675","size":"100,100"}
 Description of
 
-
-:: Moving On {"position":"1175,275","size":"100,100"}
-"$player.pref it is!"
-
-"That's my name. Don't wear it out."
-
-[[Off we go.]]
-
-
-:: Off we go. {"position":"1150,450","size":"100,100"}
-Benny leads $player.first off of the beach and into the jungle
-
-!!!TK: Some elaboration on setting.
-
-*The planet is Ostia.
-*Ostia was once a thriving, engineered "destination planet."
-*The holding company had to "right size" their offerings.
-*Most of the resident "cast members" as well as the "constructs" (robots, genetically engineered, etc) were left behind as the resort fell apart.
-
-"Wait a minute, let's check out your TeaPot!"
-
 [[Try to use TeaPot.]]
-
-
-:: PART 1: Falling Action {"position":"225,125","size":"100,100"}
-!Part One
-!!Falling Action
-
-The ''Redrockers'', those fickle schmucks, have decided your arc is over. They crumpled up the ''Draft'' and threw it in the bin like you weren't anything. But isn't that the point? No, really. Isn't that //your// point? Destined to be a footnote? There to support? There to usher things to a close. You're no ''Lead'', that's for sure, but there's nothing wrong with that. You're damn good at it.
-
-Well now you're out. So what now?
-
-What now? What now? What now? Move on. To your feet. Wake up, damn it.
-
-<a class="blink" data-passage="Waking Up">Wake Up</a>
-
 
 :: Random Encounter - Jungle {"position":"1000,725","size":"100,100"}
 !!!Random Encounter!
@@ -152,21 +58,6 @@ Something exciting happens here while navigating the jungle One of three (3) eve
 *Sign of overarching power structure. ''Perhaps a flyover?''
 
 [[Arrive in Pontchartrain Beach]]
-
-
-:: Redrockers {"position":"125,400","size":"100,100"}
-The ''Redrock Corporation'' placed their island HQ in San Francisco Bay, not despite its bad vibes but because of them. Centuries of stories of villainish lairs to back them up. Powerful and amoral and mercinary.
-
-Not to mention that before the ''Fall of the States,'' Red Rock Island was a tiny place where three "counties" came together. A nexus. All places but none. Every story and no story in particular. First Drafts and crumpled ones.
-
-Where were you? [[Oh, right.|PART 1: Falling Action]]
-
-
-:: Start Screen {"position":"75,25","size":"100,100"}
-<img src="img/home-banner.png" alt="" width="720" class="banner home-banner">
-!Tank Flintlock
-!!An Interactive Science Fiction Story
-<h2><a class="color-copy" data-passage="PART 1: Falling Action">Begin</a></h2>
 
 
 :: TEAPOT - Boot Sequence {"position":"1000,375","size":"100,100"}
@@ -232,25 +123,6 @@ CURRENT STATUS: RA [Retroactively Apocryphal]
 }}}
 
 
-:: The beach [Benny] {"position":"600,75","size":"100,100"}
-<<set $bennyHere to true >>
-TK - beach description
-
-A sun blinds you, and you bring up your hand to shield your eyes. The hood slips from your other hand, then dissolves with a skittering sound.
-
-Your vision adjusts as you struggle to your knees. As you surmised, you are on a pristine sandy beach. A peaceful ocean, unnervingly clean and blue, stretches off to the horizon.
-
-There is a ''crab'' here. "Hello," says the crab.
-
-<<linkappend "You look at the crab." t8n>> It is a crab. Friendly looking and pink, but a crab.
-
-It looks at you expectantly.
-
-"What?" you ask. [["\"What did you say?\""|INTRO: Benny]]
-
-<</linkappend>>
-
-
 
 :: Try to use TeaPot. {"position":"1150,575","size":"100,100"}
 !!!TeaPot
@@ -258,24 +130,3 @@ It looks at you expectantly.
 You should try it!
 
 [[TEAPOT - Boot Sequence]] 
-
-
-
-:: Waking Up {"position":"425,50","size":"100,100"}
-Oh, goddamn it that was a mistake. Waking up was a mistake. Everything hurts. Every limb is throbbing. And you're dizzy. Wait, are you dizzy? Oh, no. No that's not it. You're lying on the ground. You're lying on your side.
-
-You're lying on... What are the words for these sensations? Damn it. You're lying on something... //hot//. That's the word. And coarse.
-
-Gritty. Damn it. It's sand.
-
-A pulsing roar, muffled and deep. Rumbling through the sand; through your throbbing bones. You're on a beach.
-
-But it's dark. [[Why is it dark?]]
-
-
-:: Why is it dark? {"position":"500,225","size":"100,100"}
-/* TK */
-
-The darkness. The muffling. You've got a sack over your head. You should do something about that.
-
-[[You do something about it.|The beach]]

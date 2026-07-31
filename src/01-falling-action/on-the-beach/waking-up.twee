@@ -1,0 +1,47 @@
+:: PART 1: Falling Action
+!Part One
+!!Falling Action
+
+The ''Redrockers'', those fickle schmucks, have decided your arc is over. They crumpled up the ''Draft'' and threw it in the bin like you weren't anything. But isn't that the point? No, really. Isn't that //your// point? Destined to be a footnote? There to support? There to usher things to a close. You're no ''Lead'', that's for sure, but there's nothing wrong with that. You're damn good at it.
+
+Well now you're out. So what now?
+
+What now? What now? What now? Move on. To your feet. Wake up, damn it.
+
+<a class="blink" data-passage="Waking Up">Wake up</a>
+
+:: Waking Up
+Oh, goddamn it that was a mistake. Waking up was a mistake. Everything hurts. Every limb is throbbing. And you're dizzy. Wait, are you dizzy? Oh, no. No that's not it. You're lying on the ground. You're lying on your side.
+
+You're lying on... What are the words for these sensations? Damn it. You're lying on something... //hot//. That's the word. And coarse.
+
+Gritty. Damn it. It's sand.
+
+A pulsing roar, muffled and deep. Rumbling through the sand; through your throbbing bones. You're on a beach.
+
+But it's dark. [[Why is it dark?]]
+
+:: Why is it dark?
+/* TK */
+
+The darkness. The muffling. You've got a sack over your head. You should do something about that.
+
+[[You do something about it.|The beach]]
+
+:: The beach
+<<set $bennyHere to true >>
+TK - beach description
+
+A sun blinds you, and you bring up your hand to shield your eyes. The hood slips from your other hand, then dissolves with a skittering sound.
+
+Your vision adjusts as you struggle to your knees. As you surmised, you are on a pristine sandy beach. A peaceful ocean, unnervingly clean and blue, stretches off to the horizon.
+
+There is a ''crab'' here. "Hello," says the crab.
+
+<<linkappend "You look at the crab." t8n>> It is a crab. Friendly looking and pink, but a crab.
+
+It looks at you expectantly.
+
+"What?" you ask. [["\"What did you say?\""|INTRO: Benny]]
+
+<</linkappend>>

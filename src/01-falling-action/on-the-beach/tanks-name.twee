@@ -1,0 +1,28 @@
+:: "I'm Tank Flintlock."
+/* TK */ Benny: "Tank Flintlock! That's a heck of a name. Do you prefer Tank? Or Flintlock?"
+
+[["Call me Tank."|Moving On]]
+[["Call me Flintlock."|Moving On][$player.pref to "Flintlock"]]
+[["I said Tank Flintlock."|Moving On][$player.pref to "Tank Flintlock"]]
+
+
+:: Come up with alias.
+/*
+Need to add form validation
+*/
+"What's your first name?" <<textbox "$player.first" $player.first>>
+
+"What's your last name?" <<textbox "$player.last" $player.last>>
+
+"What do you prefer to be called?" <<textbox "$player.pref" $player.pref>>
+
+<<button "Tell Benny" "Moving On">>
+<<set $player.full to $player.first.trim() + " " + $player.last.trim() >>
+<</button>>
+
+:: Moving On
+"$player.pref it is!"
+
+"That's my name. Don't wear it out."
+
+[[Off we go.]]

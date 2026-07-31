@@ -1,0 +1,18 @@
+:: INTRO: Benny
+"I'm Beignet!" says the crab, clearly very happy to see you. "But you can call me Benny if you like! I'm a Resort Ambassador and I'm here to help you enjoy your stay here in Ostia!"
+
+[["Resort ambassador?"]]
+
+
+:: "Resort ambassador?"
+/* TK */ Benny describes themself.
+
+"And who are you?"
+<<set $player = {
+full: "Tank Flintlock",
+first: "Tank",
+last: "Flintlock",
+pref: "Tank"
+}>>
+[["I'm Tank Flintlock."]]
+[[Come up with alias.]]
