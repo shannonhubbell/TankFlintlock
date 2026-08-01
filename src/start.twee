@@ -1,5 +1,6 @@
 :: Start Screen [start-page]
-<img src="img/home-banner.png" alt="" width="720" class="banner home-banner">
-!Tank Flintlock
-!!An Interactive Science Fiction Story
-<h2><a class="color-copy" data-passage="PART 1: Falling Action">Begin</a></h2>
+!"Tank Flintlock"
+!!By Shannon Ellery Hubbell
+
+
+!![[Let's get started.|PART 1: Falling Action]]

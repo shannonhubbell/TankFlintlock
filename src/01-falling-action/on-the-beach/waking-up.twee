@@ -1,6 +1,7 @@
-:: PART 1: Falling Action
+:: PART 1: Falling Action [part-start]
 !Part One
 !!Falling Action
+----
 
 The ''Redrockers'', those fickle schmucks, have decided your arc is over. They crumpled up the ''Draft'' and threw it in the bin like you weren't anything. But isn't that the point? No, really. Isn't that //your// point? Destined to be a footnote? There to support? There to usher things to a close. You're no ''Lead'', that's for sure, but there's nothing wrong with that. You're damn good at it.
 
@@ -8,7 +9,7 @@ Well now you're out. So what now?
 
 What now? What now? What now? Move on. To your feet. Wake up, damn it.
 
-<a class="blink" data-passage="Waking Up">Wake up</a>
+<a class="blur" data-passage="Waking Up">Wake up</a>
 
 :: Waking Up
 Oh, goddamn it that was a mistake. Waking up was a mistake. Everything hurts. Every limb is throbbing. And you're dizzy. Wait, are you dizzy? Oh, no. No that's not it. You're lying on the ground. You're lying on your side.
@@ -30,18 +31,19 @@ The darkness. The muffling. You've got a sack over your head. You should do some
 
 :: The beach
 <<set $bennyHere to true >>
-TK - beach description
+A blistering ''sun'' blinds you. You bring up your hand to shield your eyes. The hood slips from your other hand, then dissolves with a skittering on the sand. The hood's nanotech remains drift away on the lazy breeze.
 
-A sun blinds you, and you bring up your hand to shield your eyes. The hood slips from your other hand, then dissolves with a skittering sound.
-
-Your vision adjusts as you struggle to your knees. As you surmised, you are on a pristine sandy beach. A peaceful ocean, unnervingly clean and blue, stretches off to the horizon.
+Your peepers adjust as you struggle to your knees. As you surmised, you are on a pristine sandy ''beach''. A peaceful ocean, unnervingly clean and blue, stretches off to the horizon. It's a hack postcard vision of nature. Too pretty. You hate it.
 
 There is a ''crab'' here. "Hello," says the crab.
 
-<<linkappend "You look at the crab." t8n>> It is a crab. Friendly looking and pink, but a crab.
+<<linkappend "You look at the crab." t8n>> It is a crab. Friendly looking and pink, but a crab. It's small, but not so small you could crush it in your palm. That's a bad way of thinking of it. You meet a friendly crab and your first thought is ways to kill it?
 
-It looks at you expectantly.
+[[What is wrong with you?]]
+<</linkappend>>
+
+:: What is wrong with you?
+
+The crab is looking you over, its eyestalks twitching in a way that somehow pantomimes being expectant.
 
 "What?" you ask. [["\"What did you say?\""|INTRO: Benny]]
-
-<</linkappend>>
