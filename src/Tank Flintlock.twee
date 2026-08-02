@@ -1,6 +1,11 @@
 :: StoryTitle
 Tank Flintlock
 
+:: StorySubtitle
+A science fiction story.
+
+:: StoryAuthor
+Shannon Ellery Hubbell
 
 :: StoryData
 {
@@ -13,120 +18,4 @@ Tank Flintlock
     "Benny": "blue"
   },
   "zoom": 1
-}
-
-:: Arrive in Pontchartrain Beach {"position":"575,350","size":"200,200"}
-You emerge from the jungle into ''Pontchartrain Beach'', a small town built out of the ruins of an abandoned water park. You are initially in the central market area, at the "shore" of the ''deactivated wave pool''.
-
-The market has a ''sparse crowd'' of (seeming) humans and (seeming) animals.
-<<if $pbFigureSeen isnot true  >>
-There is a ''mysterious figure'' in the crowd.
-<<endif>>
-
-----
-
-[[Look at crowd.]]
-<<if $pbFigureSeen isnot true  >>
-[[Look at suspicious figure.]]
-<<endif>>
-[[Look at wave pool.]]
-
-
-:: Look at crowd. {"position":"875,800","size":"100,100"}
-
-
-
-:: Look at suspicious figure. {"position":"650,825","size":"100,100"}
-The suspicious figure looks back. Then vanishes into the crowd. Weird.
-<<set $pbFigureSeen to true >>
-----
-
-[[Look around.|Arrive in Pontchartrain Beach]] 
-
-
-:: Look at wave pool. {"position":"525,675","size":"100,100"}
-Description of
-
-[[Try to use TeaPot.]]
-
-:: Random Encounter - Jungle {"position":"1000,725","size":"100,100"}
-!!!Random Encounter!
-
-Something exciting happens here while navigating the jungle One of three (3) events.
-*Wildlife?
-*Human?
-*Sign of overarching power structure. ''Perhaps a flyover?''
-
-[[Arrive in Pontchartrain Beach]]
-
-
-:: TEAPOT - Boot Sequence {"position":"1000,375","size":"100,100"}
-{{{
-----------------------------------------------------
-Welcome to REDROCK OS!™ 
-----------------------------------------------------
-Please stand by...
-Please stand by...
-Please stand by...
-----------------------------------------------------
-INITIALIZING TEAPOT.RDRX
-Please stand by...
-----------------------------------------------------
-
-WARNING: TEAPOT_CONFIG.XML NOT FOUND
-
-ADVISED ACTIONS:
-	1. GENERATE NEW CONFIG FROM TEMPLATE
-	2. EXIT
-PLEASE SELECT AN OPTION.
-}}}
-
-----
-<<if $withBenny is true  >>
-[["No idea what this does, but sure. Generate away."|TEAPOT - Generate]]
-<<else>>
-[['"Generate it, I guess."'|TEAPOT - Generate]]
-<<endif>>
-
-
-
-
-:: TEAPOT - Generate {"position":"850,375","size":"100,100"}
-{{{
-! CONNECTING TO REDROCKET...
-Please stand by...
-Please stand by...
-We seem to be taking longer than normal. This usually
-doesn't happen to us, I swear!
-Please stand by...
-Please stand by...
-! RedRockEt™ Uplink NOT FOUND
-Would you allow us to assemble a baseline from context? (Y/N)
-}}}
-
-----
-
-[[Y|TEAPOT - Wing It]]
-
-
-:: TEAPOT - Wing It {"position":"925,500","size":"100,100"}
-{{{
-----------------------------------------------------
-USER PROFILE
-----------------------------------------------------
-LN: "Flintlock"
-FN: "Tank"
-DoB: NaN
-ROLETAGS: { mercenary, gunForHire, tertiary, expositionFont }
-ALIAS(ES): "a whole lot"
-CURRENT STATUS: RA [Retroactively Apocryphal]
-}}}
-
-
-
-:: Try to use TeaPot. {"position":"1150,575","size":"100,100"}
-!!!TeaPot
-
-You should try it!
-
-[[TEAPOT - Boot Sequence]] 
+} 

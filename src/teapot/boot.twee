@@ -1,0 +1,70 @@
+:: TEAPOT - Boot Sequence {"position":"1000,375","size":"100,100"}
+{{{
+----------------------------------------------------
+Welcome to REDROCK OS!™ 
+----------------------------------------------------
+Please stand by...
+Please stand by...
+Please stand by...
+----------------------------------------------------
+INITIALIZING TEAPOT.RDRX
+Please stand by...
+----------------------------------------------------
+
+WARNING: TEAPOT_CONFIG.XML NOT FOUND
+
+ADVISED ACTIONS:
+	1. GENERATE NEW CONFIG FROM TEMPLATE
+	2. EXIT
+PLEASE SELECT AN OPTION.
+}}}
+
+----
+<<if $withBenny is true  >>
+[["No idea what this does, but sure. Generate away."|TEAPOT - Generate]]
+<<else>>
+[['"Generate it, I guess."'|TEAPOT - Generate]]
+<</if>>
+
+
+
+
+:: TEAPOT - Generate
+{{{
+! CONNECTING TO REDROCKET...
+Please stand by...
+Please stand by...
+We seem to be taking longer than normal. This usually
+doesn't happen to us, I swear!
+Please stand by...
+Please stand by...
+! RedRockEt™ Uplink NOT FOUND
+Would you allow us to assemble a baseline from context? (Y/N)
+}}}
+
+----
+
+[[Y|TEAPOT - Wing It]]
+
+
+:: TEAPOT - Wing It
+{{{
+----------------------------------------------------
+USER PROFILE
+----------------------------------------------------
+LN: "Flintlock"
+FN: "Tank"
+DoB: NaN
+ROLETAGS: { mercenary, gunForHire, tertiary, expositionFont }
+ALIAS(ES): "a whole lot"
+CURRENT STATUS: RA [Retroactively Apocryphal]
+}}}
+
+
+
+:: Try to use TeaPot.
+!!!TeaPot
+
+You should try it!
+
+[[TEAPOT - Boot Sequence]] 

@@ -11,7 +11,19 @@ body {
   font-style: normal;
   background-color: var(--background-color);
   color: var(--copy-color);
-  font-size: 15px;
+  font-size: 16px;
+}
+
+#ui-bar {
+  color: var(--background-color);
+  #story-title {
+    color: var(--background-color);
+  }
+  #story-author {
+    color: var(--dim-color);
+    font-weight: 400;
+    font-size: .8rem;
+  }
 }
 
 a {

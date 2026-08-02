@@ -1,0 +1,31 @@
+:: Arrive in Pontchartrain Beach
+You emerge from the jungle into ''Pontchartrain Beach'', a small town built out of the ruins of an abandoned water park. You are initially in the central market area, at the "shore" of the ''deactivated wave pool''.
+
+The market has a ''sparse crowd'' of (seeming) humans and (seeming) animals.
+<<if $pbFigureSeen isnot true  >>
+There is a ''mysterious figure'' in the crowd.
+<</if>>
+
+----
+
+[[Look at crowd.]]
+<<if $pbFigureSeen isnot true  >>
+[[Look at suspicious figure.]]
+<</if>>
+[[Look at wave pool.]]
+
+
+:: Look at crowd.
+
+Look at crowd.
+
+:: Look at suspicious figure. {"position":"650,825","size":"100,100"}
+The suspicious figure looks back. Then vanishes into the crowd. Weird.
+<<set $pbFigureSeen to true >>
+----
+
+[[Look around.|Arrive in Pontchartrain Beach]] 
+
+
+:: Look at wave pool.
+Description of
