@@ -1,11 +1,78 @@
-:: Off we go.
-Benny leads $player.first off of the beach and into the jungle
+:: Moving On
+"$player.pref it is!"
 
-!!!TK: Some elaboration on setting.
+"What is this place?" you ask
 
-*The planet is Ostia.
-*Ostia was once a thriving, engineered "destination planet."
-*The holding company had to "right size" their offerings.
-*Most of the resident "cast members" as well as the "constructs" (robots, genetically engineered, etc) were left behind as the resort fell apart.
+"Why Ostia, of course! The newest and finest luxury resortoid in the Redrock Family of Worlds." Benny scitters around in a circle, facing outward with its little claws splayed, as if to emcompass the landscape. "A thousand tomorrows, today!"
 
-"Wait a minute, let's check out your TeaPot!"
+"Restortoid, huh? How did I get here?"
+
+"What an odd question." Benny holds one claw to its mouth thoughtfully. "Do you not know?"
+
+"That's why I'm asking."
+
+"I simply found you here on the beach! I've been making the rounds, keeping an eye or two out for guests in need."
+
+<ul class="player-options">
+    <li>[['"So you just found me randomly."']]</li>
+</ul>
+
+:: "So you just found me randomly."
+
+The crab shrugs. "I'm here to serve."
+
+Great, they conked you on the head and left you on a spec planet. Nothing but a random wandering clippy droid to keep you company.
+
+"If I may, $player.pref, you seem a bit disoriented. Do you have an emergency contact? Or may I lead you to the nearest designated safety zone?"
+
+<ul class="player-options">
+    <li>[[Look at Benny.]]</li>
+    <li>[[Look at the sky.]]</li>
+    <li>[[Look at the jungle.]]</li>
+    <li>[["Lead the way."]]</li>
+</ul>
+
+:: Look at Benny.
+Benny's exoskeleton is a soothing, pale pink.
+
+Its carapace has a dull "matte" finish, while its limbs are slightly opalescent.
+
+Its eyes: two gleaming black beads on tiny twitching stalks.
+
+Benny's mouth in no way resembles that of a human, so its designers had to find other ways to anthropomorphize.
+
+Benny emotes through exaggerated posture, like a silent cartoon character.
+
+<<back>>
+
+
+:: Look at the sky.
+The sky is cloudless and blue, the local star directly overhead, pissing its rays down upon you. You sweat and scowl at it.
+
+There is a grid of pale lines, half-finished but spanning a third of the sky. Construction up in orbit? Can't tell with the naked eye.
+
+On the horizon are the coiled outlines of ''megastructures''. The organic-looking "grown" buildings that are the trademark of Redrock Corp.
+
+<<back>>
+
+
+:: Look at the jungle.
+The jungle is a near-solid wall of green biota. Its base is a morass of strange fungi, moss, twisting vines. Some vines as thick as snakes. You get the feeling you could shove your arm into this and not get it back.
+
+There is no getting through without a machete. Or a chainsaw.
+
+Trees rise up from this tangle, their trunks at least a meter wide. Their branches intermesh to form a thick canopy: a second quagmire, looming high above the first.
+
+<<back>>
+
+
+:: "Lead the way."
+"You got it, $player.pref! Let me see what the closest..." The robot pauses. It seems confused.
+
+"Something wrong?"
+
+"Yes. Strange. I can't seem to connect to RedNet for the latest satellite data. It's been a little while since I've checked in."
+
+"How long?"
+
+"About five-hundred solar days. Oh well. At least I have it cached!"

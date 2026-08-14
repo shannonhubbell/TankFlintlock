@@ -1,5 +1,5 @@
 :: "I'm Tank Flintlock."
-/* TK */ Benny: "Tank Flintlock! That's a heck of a name. Do you prefer Tank? Or Flintlock?"
+"Tank Flintlock! That's a heck of a name. Do you prefer Tank? Or Flintlock?"
 
 <ul class="player-options">
     <li>[['"Call me Tank."'|Moving On]]</li>
@@ -22,10 +22,3 @@ Need to add form validation
 <<button "Tell Benny" "Moving On">>
 <<set $player.full to $player.first.trim() + " " + $player.last.trim() >>
 <</button>>
-
-:: Moving On
-"$player.pref it is!"
-
-"That's my name. Don't wear it out."
-
-[[Off we go.]]

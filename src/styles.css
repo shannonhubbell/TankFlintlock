@@ -49,6 +49,14 @@ hr {
   padding: 0;
 }
 
+body.dark {
+  background: #000;
+  color: var(--background-color);
+  a {
+    color: var(--background-color);
+  }
+}
+
 
 .passage.start-page {
   h1 {
@@ -94,6 +102,7 @@ ul.player-options {
     background: #BFC8F5;
     text-decoration: none;
     border: 1px solid #BFC8F5;
+    color: var(--highlight-color);
     &:hover {
       border: 1px solid #6571AE;
       text-decoration: underline;
@@ -103,9 +112,14 @@ ul.player-options {
 
 input {
   &[type=text] {
-    color: var(--copy-color);
-    &:hover {
-      color: var(--background-color);
+    color: #000;
+    background: #FFF;
+    border: 1px solid #000;
+    &:hover,
+    &:focus {
+      color: #000;
+      border: 1px solid #000;
+      background: #FFF !important;
     }
   }
 }

@@ -1,5 +1,5 @@
 :: INTRO: Benny
-"I'm ''Beignet''!" says the crab, clearly very happy to see you. It dances back and forth a bit on its eight little legs. "But you can call me ''Benny'' if you like! I'm a Resort Ambassador and I'm here to help you enjoy your stay here in Ostia!"
+"I said I'm ''Beignet''!" says the crab, clearly very happy to see you. It dances back and forth a bit on its eight little legs. "But you can call me ''Benny'' if you like! I'm a Resort Ambassador and I'm here to help you enjoy your stay here in ''Ostia''!"
 
 <ul class="player-options">
     <li>[["Resort ambassador?"]]</li>
@@ -7,23 +7,21 @@
 
 
 :: "Resort ambassador?"
+"Yes!" says Benny. "There is so much to do on Ostia -- from the retroidylic waters of Pontchartrain Beach to the heroic bloodshed of ResetRuins -- and it can all be very overwhelming. Every new friend who comes to Ostia is assigned a guide who can tailor their experience specifically to them."
+
+You stand, every limb aching. Seizure? You must have had another seizure.
+
+"So, you're what?" you ask as you look around. "Some kind of droid?"
+
+The strip of beach you stand on seems endless, but a stone's throw inland the sand suddenly makes way for rich rainforest. There's no transition, like ''God'' slapped two biomes together and forgot to blur the edges&mdash;a wall of twisted tree trunks and thick, looping vines.
+
+"Sort of a droid," says Benny. "Sort of not. I am a mixture of bot and bio, and entirely autonomous. I'm pretty neat. But enough about me. You have me at a disadvantage, good sir. Who might you be?"
 <<set $player = {
 full: "Tank Flintlock",
 first: "Tank",
 last: "Flintlock",
 pref: "Tank"
 }>>
-
-"Yes!" says Benny. "There is so much to do on Ostia -- from the retroidylic waters of Pontchartrain Beach to the heroic bloodshed of ResetRuins -- and it can all be very overwhelming. Every Friend who comes to Ostia is assigned a guide who can taylor their experience specifically to them."
-
-You stand, every limb aching. Seizure? There must have been a seizure.
-
-"So, you're what?" you ask as you look around. "Some kind of droid?"
-
-The strip of beach stretches off endlessly in both directions, but about twenty meters in the beach suddenly makes way for rich rainforest. There's no transition, like ''God'' slapped two biomes together and forgot to blur the edges.
-
-"Sort of a droid," says Benny. "Sort of not. I am a mixture of bot and bio, and entirely autonomous. I'm pretty neat. But enough about me. You have me at a disadvantage, good sir. Who might you be?"
-
 <ul class="player-options">
     <li>[["I'm Tank Flintlock."]]</li>
     <li>[[You don't trust this crab. Come up with an alias.|Come up with alias.]]</li>

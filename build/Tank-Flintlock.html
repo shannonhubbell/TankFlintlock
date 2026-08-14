@@ -104,7 +104,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://132E0B26-AAE2-4D96-B925-1BECD8A9B61F// --><tw-storydata name="Tank Flintlock" startnode="18" creator="Twine (Twee 3) Language" creator-version="1.1.5" ifid="132E0B26-AAE2-4D96-B925-1BECD8A9B61F" zoom="1" format="SugarCube" format-version="2.37.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "styles.css" */
+	<!-- UUID://132E0B26-AAE2-4D96-B925-1BECD8A9B61F// --><tw-storydata name="Tank Flintlock" startnode="23" creator="Twine (Twee 3) Language" creator-version="1.1.5" ifid="132E0B26-AAE2-4D96-B925-1BECD8A9B61F" zoom="1" format="SugarCube" format-version="2.37.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "styles.css" */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 body {
@@ -156,6 +156,14 @@ hr {
   padding: 0;
 }
 
+body.dark {
+  background: #000;
+  color: var(--background-color);
+  a {
+    color: var(--background-color);
+  }
+}
+
 
 .passage.start-page {
   h1 {
@@ -201,6 +209,7 @@ ul.player-options {
     background: #BFC8F5;
     text-decoration: none;
     border: 1px solid #BFC8F5;
+    color: var(--highlight-color);
     &:hover {
       border: 1px solid #6571AE;
       text-decoration: underline;
@@ -210,51 +219,102 @@ ul.player-options {
 
 input {
   &[type=text] {
-    color: var(--copy-color);
-    &:hover {
-      color: var(--background-color);
+    color: #000;
+    background: #FFF;
+    border: 1px solid #000;
+    &:hover,
+    &:focus {
+      color: #000;
+      border: 1px solid #000;
+      background: #FFF !important;
     }
   }
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="TK" color="red"></tw-tag><tw-tag name="Benny" color="blue"></tw-tag><tw-passagedata pid="1" name="INTRO: Benny" tags="" position="100,100" size="100,100">&quot;I&#39;m &#39;&#39;Beignet&#39;&#39;!&quot; says the crab, clearly very happy to see you. It dances back and forth a bit on its eight little legs. &quot;But you can call me &#39;&#39;Benny&#39;&#39; if you like! I&#39;m a Resort Ambassador and I&#39;m here to help you enjoy your stay here in Ostia!&quot;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="TK" color="red"></tw-tag><tw-tag name="Benny" color="blue"></tw-tag><tw-passagedata pid="1" name="INTRO: Benny" tags="" position="100,100" size="100,100">&quot;I said I&#39;m &#39;&#39;Beignet&#39;&#39;!&quot; says the crab, clearly very happy to see you. It dances back and forth a bit on its eight little legs. &quot;But you can call me &#39;&#39;Benny&#39;&#39; if you like! I&#39;m a Resort Ambassador and I&#39;m here to help you enjoy your stay here in &#39;&#39;Ostia&#39;&#39;!&quot;
 
 &lt;ul class=&quot;player-options&quot;&gt;
     &lt;li&gt;[[&quot;Resort ambassador?&quot;]]&lt;/li&gt;
-&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="2" name="&quot;Resort ambassador?&quot;" tags="" position="225,100" size="100,100">&lt;&lt;set $player = {
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="2" name="&quot;Resort ambassador?&quot;" tags="" position="225,100" size="100,100">&quot;Yes!&quot; says Benny. &quot;There is so much to do on Ostia -- from the retroidylic waters of Pontchartrain Beach to the heroic bloodshed of ResetRuins -- and it can all be very overwhelming. Every new friend who comes to Ostia is assigned a guide who can tailor their experience specifically to them.&quot;
+
+You stand, every limb aching. Seizure? You must have had another seizure.
+
+&quot;So, you&#39;re what?&quot; you ask as you look around. &quot;Some kind of droid?&quot;
+
+The strip of beach you stand on seems endless, but a stone&#39;s throw inland the sand suddenly makes way for rich rainforest. There&#39;s no transition, like &#39;&#39;God&#39;&#39; slapped two biomes together and forgot to blur the edges&amp;mdash;a wall of twisted tree trunks and thick, looping vines.
+
+&quot;Sort of a droid,&quot; says Benny. &quot;Sort of not. I am a mixture of bot and bio, and entirely autonomous. I&#39;m pretty neat. But enough about me. You have me at a disadvantage, good sir. Who might you be?&quot;
+&lt;&lt;set $player = {
 full: &quot;Tank Flintlock&quot;,
 first: &quot;Tank&quot;,
 last: &quot;Flintlock&quot;,
 pref: &quot;Tank&quot;
 }&gt;&gt;
-
-&quot;Yes!&quot; says Benny. &quot;There is so much to do on Ostia -- from the retroidylic waters of Pontchartrain Beach to the heroic bloodshed of ResetRuins -- and it can all be very overwhelming. Every Friend who comes to Ostia is assigned a guide who can taylor their experience specifically to them.&quot;
-
-You stand, every limb aching. Seizure? There must have been a seizure.
-
-&quot;So, you&#39;re what?&quot; you ask as you look around. &quot;Some kind of droid?&quot;
-
-The strip of beach stretches off endlessly in both directions, but about twenty meters in the beach suddenly makes way for rich rainforest. There&#39;s no transition, like &#39;&#39;God&#39;&#39; slapped two biomes together and forgot to blur the edges.
-
-&quot;Sort of a droid,&quot; says Benny. &quot;Sort of not. I am a mixture of bot and bio, and entirely autonomous. I&#39;m pretty neat. But enough about me. You have me at a disadvantage, good sir. Who might you be?&quot;
-
 &lt;ul class=&quot;player-options&quot;&gt;
     &lt;li&gt;[[&quot;I&#39;m Tank Flintlock.&quot;]]&lt;/li&gt;
     &lt;li&gt;[[You don&#39;t trust this crab. Come up with an alias.|Come up with alias.]]&lt;/li&gt;
-&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="3" name="Off we go." tags="" position="350,100" size="100,100">Benny leads $player.first off of the beach and into the jungle
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="3" name="Moving On" tags="" position="350,100" size="100,100">&quot;$player.pref it is!&quot;
 
-!!!TK: Some elaboration on setting.
+&quot;What is this place?&quot; you ask
 
-*The planet is Ostia.
-*Ostia was once a thriving, engineered &quot;destination planet.&quot;
-*The holding company had to &quot;right size&quot; their offerings.
-*Most of the resident &quot;cast members&quot; as well as the &quot;constructs&quot; (robots, genetically engineered, etc) were left behind as the resort fell apart.
+&quot;Why Ostia, of course! The newest and finest luxury resortoid in the Redrock Family of Worlds.&quot; Benny scitters around in a circle, facing outward with its little claws splayed, as if to emcompass the landscape. &quot;A thousand tomorrows, today!&quot;
 
-&quot;Wait a minute, let&#39;s check out your TeaPot!&quot;</tw-passagedata><tw-passagedata pid="4" name="&quot;I&#39;m Tank Flintlock.&quot;" tags="" position="475,100" size="100,100">/* TK */ Benny: &quot;Tank Flintlock! That&#39;s a heck of a name. Do you prefer Tank? Or Flintlock?&quot;
+&quot;Restortoid, huh? How did I get here?&quot;
+
+&quot;What an odd question.&quot; Benny holds one claw to its mouth thoughtfully. &quot;Do you not know?&quot;
+
+&quot;That&#39;s why I&#39;m asking.&quot;
+
+&quot;I simply found you here on the beach! I&#39;ve been making the rounds, keeping an eye or two out for guests in need.&quot;
+
+&lt;ul class=&quot;player-options&quot;&gt;
+    &lt;li&gt;[[&#39;&quot;So you just found me randomly.&quot;&#39;]]&lt;/li&gt;
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="4" name="&quot;So you just found me randomly.&quot;" tags="" position="475,100" size="100,100">The crab shrugs. &quot;I&#39;m here to serve.&quot;
+
+Great, they conked you on the head and left you on a spec planet. Nothing but a random wandering clippy droid to keep you company.
+
+&quot;If I may, $player.pref, you seem a bit disoriented. Do you have an emergency contact? Or may I lead you to the nearest designated safety zone?&quot;
+
+&lt;ul class=&quot;player-options&quot;&gt;
+    &lt;li&gt;[[Look at Benny.]]&lt;/li&gt;
+    &lt;li&gt;[[Look at the sky.]]&lt;/li&gt;
+    &lt;li&gt;[[Look at the jungle.]]&lt;/li&gt;
+    &lt;li&gt;[[&quot;Lead the way.&quot;]]&lt;/li&gt;
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="5" name="Look at Benny." tags="" position="600,100" size="100,100">Benny&#39;s exoskeleton is a soothing, pale pink.
+
+Its carapace has a dull &quot;matte&quot; finish, while its limbs are slightly opalescent.
+
+Its eyes: two gleaming black beads on tiny twitching stalks.
+
+Benny&#39;s mouth in no way resembles that of a human, so its designers had to find other ways to anthropomorphize.
+
+Benny emotes through exaggerated posture, like a silent cartoon character.
+
+&lt;&lt;back&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Look at the sky." tags="" position="725,100" size="100,100">The sky is cloudless and blue, the local star directly overhead, pissing its rays down upon you. You sweat and scowl at it.
+
+There is a grid of pale lines, half-finished but spanning a third of the sky. Construction up in orbit? Can&#39;t tell with the naked eye.
+
+On the horizon are the coiled outlines of &#39;&#39;megastructures&#39;&#39;. The organic-looking &quot;grown&quot; buildings that are the trademark of Redrock Corp.
+
+&lt;&lt;back&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Look at the jungle." tags="" position="850,100" size="100,100">The jungle is a near-solid wall of green biota. Its base is a morass of strange fungi, moss, twisting vines. Some vines as thick as snakes. You get the feeling you could shove your arm into this and not get it back.
+
+There is no getting through without a machete. Or a chainsaw.
+
+Trees rise up from this tangle, their trunks at least a meter wide. Their branches intermesh to form a thick canopy: a second quagmire, looming high above the first.
+
+&lt;&lt;back&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="&quot;Lead the way.&quot;" tags="" position="975,100" size="100,100">&quot;You got it, $player.pref! Let me see what the closest...&quot; The robot pauses. It seems confused.
+
+&quot;Something wrong?&quot;
+
+&quot;Yes. Strange. I can&#39;t seem to connect to RedNet for the latest satellite data. It&#39;s been a little while since I&#39;ve checked in.&quot;
+
+&quot;How long?&quot;
+
+&quot;About five-hundred solar days. Oh well. At least I have it cached!&quot;</tw-passagedata><tw-passagedata pid="9" name="&quot;I&#39;m Tank Flintlock.&quot;" tags="" position="1100,100" size="100,100">&quot;Tank Flintlock! That&#39;s a heck of a name. Do you prefer Tank? Or Flintlock?&quot;
 
 &lt;ul class=&quot;player-options&quot;&gt;
     &lt;li&gt;[[&#39;&quot;Call me Tank.&quot;&#39;|Moving On]]&lt;/li&gt;
     &lt;li&gt;[[&#39;&quot;Call me Flintlock.&quot;&#39;|Moving On][$player.pref to &quot;Flintlock&quot;]]&lt;/li&gt;
     &lt;li&gt;[[&#39;&quot;I said Tank Flintlock.&quot;&#39;|Moving On][$player.pref to &quot;Tank Flintlock&quot;]]&lt;/li&gt;
-&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="5" name="Come up with alias." tags="" position="600,100" size="100,100">/*
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="10" name="Come up with alias." tags="" position="1225,100" size="100,100">/*
 Need to add form validation
 */
 &quot;What&#39;s your first name?&quot;
@@ -268,45 +328,49 @@ Need to add form validation
 
 &lt;&lt;button &quot;Tell Benny&quot; &quot;Moving On&quot;&gt;&gt;
 &lt;&lt;set $player.full to $player.first.trim() + &quot; &quot; + $player.last.trim() &gt;&gt;
-&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Moving On" tags="" position="725,100" size="100,100">&quot;$player.pref it is!&quot;
-
-&quot;That&#39;s my name. Don&#39;t wear it out.&quot;
-
-[[Off we go.]]</tw-passagedata><tw-passagedata pid="7" name="PART 1: Falling Action" tags="part-start" position="850,100" size="100,100">!Part One
+&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="PART 1: Falling Action" tags="part-start dark" position="100,225" size="100,100">!Part One
 !!Falling Action
 ----
 
 The &#39;&#39;Redrockers&#39;&#39;, those fickle schmucks, have decided your arc is over. They crumpled up the &#39;&#39;Draft&#39;&#39; and threw it in the bin like you weren&#39;t anything. But isn&#39;t that the point? No, really. Isn&#39;t that //your// point? Destined to be a footnote? There to support? There to usher things to a close. You&#39;re no &#39;&#39;Lead&#39;&#39;, that&#39;s for sure, but there&#39;s nothing wrong with that. You&#39;re damn good at it.
 
-Well now you&#39;re out. So what now?
-
 What now? What now? What now? Move on. To your feet. Wake up, damn it.
 
-&lt;a class=&quot;blur&quot; data-passage=&quot;Waking Up&quot;&gt;Wake up&lt;/a&gt;</tw-passagedata><tw-passagedata pid="8" name="Waking Up" tags="" position="975,100" size="100,100">Oh, goddamn it that was a mistake. Waking up was a mistake. Everything hurts. Every limb is throbbing. And you&#39;re dizzy. Wait, are you dizzy? Oh, no. No that&#39;s not it. You&#39;re lying on the ground. You&#39;re lying on your side.
+&lt;ul class=&quot;player-options&quot;&gt;
+    &lt;li&gt;[[You wake up.|Waking Up]]&lt;/li&gt;
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="12" name="Waking Up" tags="dark" position="225,225" size="100,100">Oh, goddamn it that was a mistake. Waking up was a mistake. Everything hurts. Every limb is throbbing. And you&#39;re dizzy. Wait, //are// you dizzy? Oh, no. No that&#39;s not it. You&#39;re lying on the ground. You&#39;re lying on your side.
 
-You&#39;re lying on... What are the words for these sensations? Damn it. You&#39;re lying on something... //hot//. That&#39;s the word. And coarse.
+You&#39;re lying on... What are the words for these sensations? Damn it. You&#39;re lying on something... //hot//. That&#39;s the word. And coarse. Gritty. Damn it. It&#39;s sand.
 
-Gritty. Damn it. It&#39;s sand.
+A pulsing roar, muffled and deep. Rumbling through the sand; through your throbbing bones. You&#39;re on a beach. But it&#39;s dark. 
 
-A pulsing roar, muffled and deep. Rumbling through the sand; through your throbbing bones. You&#39;re on a beach.
+&lt;ul class=&quot;player-options&quot;&gt;
+    &lt;li&gt;[[&quot;Why is it dark?&quot;]]&lt;/li&gt;
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="13" name="Why is it dark?" tags="dark" position="350,225" size="100,100">The darkness. The muffling. You&#39;ve got a sack over your head. You should do something about that.
 
-But it&#39;s dark. [[Why is it dark?]]</tw-passagedata><tw-passagedata pid="9" name="Why is it dark?" tags="" position="1100,100" size="100,100">/* TK */
+&lt;ul class=&quot;player-options&quot;&gt;
+    &lt;li&gt;[[You do something about it.|The beach]]&lt;/li&gt;
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="14" name="The beach" tags="" position="475,225" size="100,100">&#39;&#39;An unforgiving sun blinds you.&#39;&#39;
 
-The darkness. The muffling. You&#39;ve got a sack over your head. You should do something about that.
+You bring up your hand to shield your eyes. The hood slips from your other hand, then dissolves with a skittering on the sand. The hood&#39;s nanotech remains drift away on the breeze.
 
-[[You do something about it.|The beach]]</tw-passagedata><tw-passagedata pid="10" name="The beach" tags="" position="1225,100" size="100,100">&lt;&lt;set $bennyHere to true &gt;&gt;
-A blistering &#39;&#39;sun&#39;&#39; blinds you. You bring up your hand to shield your eyes. The hood slips from your other hand, then dissolves with a skittering on the sand. The hood&#39;s nanotech remains drift away on the lazy breeze.
-
-Your peepers adjust as you struggle to your knees. As you surmised, you are on a pristine sandy &#39;&#39;beach&#39;&#39;. A peaceful ocean, unnervingly clean and blue, stretches off to the horizon. It&#39;s a hack postcard vision of nature. Too pretty. You hate it.
+Your eyes adjust as you struggle to your knees. As you figured, you are on a pristine sandy &#39;&#39;beach&#39;&#39;. A peaceful ocean, unnervingly clean and blue, stretches off to the horizon. It&#39;s a hack postcard vision of nature. Too perfect.
 
 There is a &#39;&#39;crab&#39;&#39; here. &quot;Hello,&quot; says the crab.
 
-&lt;&lt;linkappend &quot;You look at the crab.&quot; t8n&gt;&gt; It is a crab. Friendly looking and pink, but a crab. It&#39;s small, but not so small you could crush it in your palm. That&#39;s a bad way of thinking of it. You meet a friendly crab and your first thought is ways to kill it?
+&lt;ul class=&quot;player-options&quot;&gt;
+    &lt;li&gt;[[You look at the crab.]]&lt;/li&gt;
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="15" name="You look at the crab." tags="" position="600,225" size="100,100">It is a crab. Friendly looking and pink, but a crab. It&#39;s small enough to fit on you hand, but not so small that you could easily crush it.
 
-[[What is wrong with you?]]
-&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="What is wrong with you?" tags="" position="100,225" size="100,100">The crab is looking you over, its eyestalks twitching in a way that somehow pantomimes being expectant.
+That&#39;s a messed up way of thinking about things. You meet a friendly crab and your first thought is ways to kill it?
 
-&quot;What?&quot; you ask. [[&quot;\&quot;What did you say?\&quot;&quot;|INTRO: Benny]]</tw-passagedata><tw-passagedata pid="12" name="Arrive in Pontchartrain Beach" tags="" position="225,225" size="100,100">You emerge from the jungle into &#39;&#39;Pontchartrain Beach&#39;&#39;, a small town built out of the ruins of an abandoned water park. You are initially in the central market area, at the &quot;shore&quot; of the &#39;&#39;deactivated wave pool&#39;&#39;.
+&lt;ul class=&quot;player-options&quot;&gt;
+    &lt;li&gt;[[What is wrong with you?]]&lt;/li&gt;
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="16" name="What is wrong with you?" tags="" position="725,225" size="100,100">The crab is looking you over, its eyestalks twitching expectantly.
+
+&lt;ul class=&quot;player-options&quot;&gt;
+    &lt;li&gt;[[&quot;\&quot;What did you say?\&quot;&quot;|INTRO: Benny]]&lt;/li&gt;
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="17" name="Arrive in Pontchartrain Beach" tags="" position="850,225" size="100,100">You emerge from the jungle into &#39;&#39;Pontchartrain Beach&#39;&#39;, a small town built out of the ruins of an abandoned water park. You are initially in the central market area, at the &quot;shore&quot; of the &#39;&#39;deactivated wave pool&#39;&#39;.
 
 The market has a &#39;&#39;sparse crowd&#39;&#39; of (seeming) humans and (seeming) animals.
 &lt;&lt;if $pbFigureSeen isnot true  &gt;&gt;
@@ -319,15 +383,15 @@ There is a &#39;&#39;mysterious figure&#39;&#39; in the crowd.
 &lt;&lt;if $pbFigureSeen isnot true  &gt;&gt;
 [[Look at suspicious figure.]]
 &lt;&lt;/if&gt;&gt;
-[[Look at wave pool.]]</tw-passagedata><tw-passagedata pid="13" name="Look at crowd." tags="" position="350,225" size="100,100">Look at crowd.</tw-passagedata><tw-passagedata pid="14" name="Look at suspicious figure." tags="" position="650,825" size="100,100">The suspicious figure looks back. Then vanishes into the crowd. Weird.
+[[Look at wave pool.]]</tw-passagedata><tw-passagedata pid="18" name="Look at crowd." tags="" position="975,225" size="100,100">Look at crowd.</tw-passagedata><tw-passagedata pid="19" name="Look at suspicious figure." tags="" position="650,825" size="100,100">The suspicious figure looks back. Then vanishes into the crowd. Weird.
 &lt;&lt;set $pbFigureSeen to true &gt;&gt;
 ----
 
-[[Look around.|Arrive in Pontchartrain Beach]]</tw-passagedata><tw-passagedata pid="15" name="Look at wave pool." tags="" position="600,225" size="100,100">Description of</tw-passagedata><tw-passagedata pid="16" name="StorySubtitle" tags="" position="725,225" size="100,100">A science fiction story.</tw-passagedata><tw-passagedata pid="17" name="StoryAuthor" tags="" position="850,225" size="100,100">Shannon Ellery Hubbell</tw-passagedata><tw-passagedata pid="18" name="Start Screen" tags="start-page" position="975,225" size="100,100">!&quot;Tank Flintlock&quot;
+[[Look around.|Arrive in Pontchartrain Beach]]</tw-passagedata><tw-passagedata pid="20" name="Look at wave pool." tags="" position="1225,225" size="100,100">Description of</tw-passagedata><tw-passagedata pid="21" name="StorySubtitle" tags="" position="100,350" size="100,100">A science fiction story.</tw-passagedata><tw-passagedata pid="22" name="StoryAuthor" tags="" position="225,350" size="100,100">Shannon Ellery Hubbell</tw-passagedata><tw-passagedata pid="23" name="Start Screen" tags="start-page dark" position="350,350" size="100,100">!&quot;Tank Flintlock&quot;
 !!By Shannon Ellery Hubbell
 
 
-!![[Let&#39;s get started.|PART 1: Falling Action]]</tw-passagedata><tw-passagedata pid="19" name="TEAPOT - Boot Sequence" tags="" position="1000,375" size="100,100">{{{
+!![[Let&#39;s get started.|PART 1: Falling Action]]</tw-passagedata><tw-passagedata pid="24" name="TEAPOT - Boot Sequence" tags="" position="1000,375" size="100,100">{{{
 ----------------------------------------------------
 Welcome to REDROCK OS!™ 
 ----------------------------------------------------
@@ -352,7 +416,7 @@ PLEASE SELECT AN OPTION.
 [[&quot;No idea what this does, but sure. Generate away.&quot;|TEAPOT - Generate]]
 &lt;&lt;else&gt;&gt;
 [[&#39;&quot;Generate it, I guess.&quot;&#39;|TEAPOT - Generate]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="TEAPOT - Generate" tags="" position="1225,225" size="100,100">{{{
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="TEAPOT - Generate" tags="" position="600,350" size="100,100">{{{
 ! CONNECTING TO REDROCKET...
 Please stand by...
 Please stand by...
@@ -366,7 +430,7 @@ Would you allow us to assemble a baseline from context? (Y/N)
 
 ----
 
-[[Y|TEAPOT - Wing It]]</tw-passagedata><tw-passagedata pid="21" name="TEAPOT - Wing It" tags="" position="100,350" size="100,100">{{{
+[[Y|TEAPOT - Wing It]]</tw-passagedata><tw-passagedata pid="26" name="TEAPOT - Wing It" tags="" position="725,350" size="100,100">{{{
 ----------------------------------------------------
 USER PROFILE
 ----------------------------------------------------
@@ -376,7 +440,7 @@ DoB: NaN
 ROLETAGS: { mercenary, gunForHire, tertiary, expositionFont }
 ALIAS(ES): &quot;a whole lot&quot;
 CURRENT STATUS: RA [Retroactively Apocryphal]
-}}}</tw-passagedata><tw-passagedata pid="22" name="Try to use TeaPot." tags="" position="225,350" size="100,100">!!!TeaPot
+}}}</tw-passagedata><tw-passagedata pid="27" name="Try to use TeaPot." tags="" position="850,350" size="100,100">!!!TeaPot
 
 You should try it!
 
