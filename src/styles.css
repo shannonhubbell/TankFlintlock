@@ -5,6 +5,7 @@ body {
   --copy-color: #151A17;
   --highlight-color: #485289;
   --dim-color: #393e46;
+  --jungle-background-color: #E6F2E7;
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -55,6 +56,10 @@ body.dark {
   a {
     color: var(--background-color);
   }
+}
+
+body.jungle-light {
+  background: var(--jungle-background-color);
 }
 
 

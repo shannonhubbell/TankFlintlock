@@ -1,7 +1,7 @@
 :: Moving On
 "$player.pref it is!"
 
-"What is this place?" you ask
+"What is this place?" you ask.
 
 "Why Ostia, of course! The newest and finest luxury resortoid in the Redrock Family of Worlds." Benny scitters around in a circle, facing outward with its little claws splayed, as if to emcompass the landscape. "A thousand tomorrows, today!"
 
@@ -33,17 +33,14 @@ Great, they conked you on the head and left you on a spec planet. Nothing but a 
 </ul>
 
 :: Look at Benny.
-Benny's exoskeleton is a soothing, pale pink.
 
-Its carapace has a dull "matte" finish, while its limbs are slightly opalescent.
-
-Its eyes: two gleaming black beads on tiny twitching stalks.
-
-Benny's mouth in no way resembles that of a human, so its designers had to find other ways to anthropomorphize.
-
-Benny emotes through exaggerated posture, like a silent cartoon character.
-
-<<back>>
+''Here are some fun facts about Benny:''
+*Benny's exoskeleton is a soothing, pale pink.
+*Its carapace has a dull "matte" finish, while its limbs are slightly opalescent.
+*Its eyes: two gleaming black beads on tiny twitching stalks.
+*Benny's mouth in no way resembles that of a human, so its designers had to find other ways to anthropomorphize, therefore:
+*Benny emotes through exaggerated posture, like a silent cartoon character.
+[[But enough about Benny.|Beach: Look Around]]
 
 
 :: Look at the sky.
@@ -53,7 +50,7 @@ There is a grid of pale lines, half-finished but spanning a third of the sky. Co
 
 On the horizon are the coiled outlines of ''megastructures''. The organic-looking "grown" buildings that are the trademark of Redrock Corp.
 
-<<back>>
+[[The sky is out of reach.|Beach: Look Around]]
 
 
 :: Look at the jungle.
@@ -63,8 +60,19 @@ There is no getting through without a machete. Or a chainsaw.
 
 Trees rise up from this tangle, their trunks at least a meter wide. Their branches intermesh to form a thick canopy: a second quagmire, looming high above the first.
 
-<<back>>
+[[There is no way through.|Beach: Look Around]]
 
+:: Beach: Look Around
+It's just you and this damned crab, standing on a beach, gawking at the world.
+
+Benny is waiting.
+
+<ul class="player-options">
+    <li>[[Look at Benny.]]</li>
+    <li>[[Look at the sky.]]</li>
+    <li>[[Look at the jungle.]]</li>
+    <li>[["Lead the way."]]</li>
+</ul>
 
 :: "Lead the way."
 "You got it, $player.pref! Let me see what the closest..." The robot pauses. It seems confused.
@@ -73,6 +81,28 @@ Trees rise up from this tangle, their trunks at least a meter wide. Their branch
 
 "Yes. Strange. I can't seem to connect to RedNet for the latest satellite data. It's been a little while since I've checked in."
 
-"How long?"
+<ul class="player-options">
+    <li>[["How long?"]]</li>
+</ul>
+:: "How long?"
 
-"About five-hundred solar days. Oh well. At least I have it cached!"
+"About five-hundred solar days. Oh well. At least I have some of it cached!" Benny swings his little arms exansively, as if this basic requirement is some victory. "Anyway, time's a' wasting!"
+
+Benny skitters past your feet and plants itself in the sand, facing the jungle. With an artificial intake of breath: //"Open sesame!"//
+
+<ul class="player-options">
+    <li>//[[You've got to be kidding me.]]//</li>
+</ul>
+
+:: You've got to be kidding me.
+With a hiss, a damp rustle, and finally with a groan, the vines pull aside like a curtain. Before you now is a passageway&mdash;a leafy cavern in the jungle wall. There is a fetid, mulchy belch of air from the maw.
+
+You nod slightly at Benny, then gesture towards the jungle.
+
+<ul class="player-options">
+    <li>[["After you."]]</li>
+</ul>
+
+:: "After you." [jungle-light]
+"Don't mind if I do!" exaclaims Benny, who ambles into the jungle. You follow closely behind.
+
