@@ -104,7 +104,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://132E0B26-AAE2-4D96-B925-1BECD8A9B61F// --><tw-storydata name="Tank Flintlock" startnode="28" creator="Twine (Twee 3) Language" creator-version="1.1.5" ifid="132E0B26-AAE2-4D96-B925-1BECD8A9B61F" zoom="1" format="SugarCube" format-version="2.37.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "styles.css" */
+	<!-- UUID://132E0B26-AAE2-4D96-B925-1BECD8A9B61F// --><tw-storydata name="Tank Flintlock" startnode="34" creator="Twine (Twee 3) Language" creator-version="1.1.5" ifid="132E0B26-AAE2-4D96-B925-1BECD8A9B61F" zoom="1" format="SugarCube" format-version="2.37.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "styles.css" */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 body {
@@ -332,13 +332,21 @@ You nod slightly at Benny, then gesture towards the jungle.
 
 &lt;ul class=&quot;player-options&quot;&gt;
     &lt;li&gt;[[&quot;After you.&quot;]]&lt;/li&gt;
-&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="13" name="&quot;After you.&quot;" tags="jungle-light" position="350,225" size="100,100">&quot;Don&#39;t mind if I do!&quot; exaclaims Benny, who ambles into the jungle. You follow closely behind.</tw-passagedata><tw-passagedata pid="14" name="&quot;I&#39;m Tank Flintlock.&quot;" tags="" position="475,225" size="100,100">&quot;Tank Flintlock! That&#39;s a heck of a name. Do you prefer Tank? Or Flintlock?&quot;
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="13" name="&quot;After you.&quot;" tags="jungle-light" position="350,225" size="100,100">&quot;Don&#39;t mind if I do!&quot; exaclaims Benny, who ambles into the jungle. You follow closely behind.
+
+&lt;ul class=&quot;player-options&quot;&gt;
+    &lt;li&gt;[[You fight the triffid.]]&lt;/li&gt;
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="14" name="You fight the triffid." tags="dark-green" position="475,225" size="100,100">You fight the triffid.
+
+[[You fight and kill it.|Arrive in Pontchartrain Beach]]
+
+[[You fight and are injured.]]</tw-passagedata><tw-passagedata pid="15" name="&quot;I&#39;m Tank Flintlock.&quot;" tags="" position="600,225" size="100,100">&quot;Tank Flintlock! That&#39;s a heck of a name. Do you prefer Tank? Or Flintlock?&quot;
 
 &lt;ul class=&quot;player-options&quot;&gt;
     &lt;li&gt;[[&#39;&quot;Call me Tank.&quot;&#39;|Moving On]]&lt;/li&gt;
     &lt;li&gt;[[&#39;&quot;Call me Flintlock.&quot;&#39;|Moving On][$player.pref to &quot;Flintlock&quot;]]&lt;/li&gt;
     &lt;li&gt;[[&#39;&quot;I said Tank Flintlock.&quot;&#39;|Moving On][$player.pref to &quot;Tank Flintlock&quot;]]&lt;/li&gt;
-&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="15" name="Come up with alias." tags="" position="600,225" size="100,100">/*
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="16" name="Come up with alias." tags="" position="725,225" size="100,100">/*
 Need to add form validation
 */
 &quot;What&#39;s your first name?&quot;
@@ -352,7 +360,7 @@ Need to add form validation
 
 &lt;&lt;button &quot;Tell Benny&quot; &quot;Moving On&quot;&gt;&gt;
 &lt;&lt;set $player.full to $player.first.trim() + &quot; &quot; + $player.last.trim() &gt;&gt;
-&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="PART 1: Falling Action" tags="part-start dark" position="725,225" size="100,100">!Part One
+&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="PART 1: Falling Action" tags="part-start dark" position="850,225" size="100,100">!Part One
 !!Falling Action
 ----
 
@@ -362,7 +370,7 @@ What now? What now? What now? Move on. To your feet. Wake up, damn it.
 
 &lt;ul class=&quot;player-options&quot;&gt;
     &lt;li&gt;[[You wake up.|Waking Up]]&lt;/li&gt;
-&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="17" name="Waking Up" tags="dark" position="850,225" size="100,100">Oh, goddamn it that was a mistake. Waking up was a mistake. Everything hurts. Every limb is throbbing. And you&#39;re dizzy. Wait, //are// you dizzy? Oh, no. No that&#39;s not it. You&#39;re lying on the ground. You&#39;re lying on your side.
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="18" name="Waking Up" tags="dark" position="975,225" size="100,100">Oh, goddamn it that was a mistake. Waking up was a mistake. Everything hurts. Every limb is throbbing. And you&#39;re dizzy. Wait, //are// you dizzy? Oh, no. No that&#39;s not it. You&#39;re lying on the ground. You&#39;re lying on your side.
 
 You&#39;re lying on... What are the words for these sensations? Damn it. You&#39;re lying on something... //hot//. That&#39;s the word. And coarse. Gritty. Damn it. It&#39;s sand.
 
@@ -370,11 +378,11 @@ A pulsing roar, muffled and deep. Rumbling through the sand; through your throbb
 
 &lt;ul class=&quot;player-options&quot;&gt;
     &lt;li&gt;[[&quot;Why is it dark?&quot;]]&lt;/li&gt;
-&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="18" name="Why is it dark?" tags="dark" position="975,225" size="100,100">The darkness. The muffling. You&#39;ve got a sack over your head. You should do something about that.
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="19" name="Why is it dark?" tags="dark" position="1100,225" size="100,100">The darkness. The muffling. You&#39;ve got a sack over your head. You should do something about that.
 
 &lt;ul class=&quot;player-options&quot;&gt;
     &lt;li&gt;[[You do something about it.|The beach]]&lt;/li&gt;
-&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="19" name="The beach" tags="" position="1100,225" size="100,100">&#39;&#39;An unforgiving sun blinds you.&#39;&#39;
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="20" name="The beach" tags="" position="1225,225" size="100,100">&#39;&#39;An unforgiving sun blinds you.&#39;&#39;
 
 You bring up your hand to shield your eyes. The hood slips from your other hand, then dissolves with a skittering on the sand. The hood&#39;s nanotech remains drift away on the breeze.
 
@@ -384,17 +392,17 @@ There is a &#39;&#39;crab&#39;&#39; here. &quot;Hello,&quot; says the crab.
 
 &lt;ul class=&quot;player-options&quot;&gt;
     &lt;li&gt;[[You look at the crab.]]&lt;/li&gt;
-&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="20" name="You look at the crab." tags="" position="1225,225" size="100,100">It is a crab. Friendly looking and pink, but a crab. It&#39;s small enough to fit on you hand, but not so small that you could easily crush it.
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="21" name="You look at the crab." tags="" position="100,350" size="100,100">It is a crab. Friendly looking and pink, but a crab. It&#39;s small enough to fit on you hand, but not so small that you could easily crush it.
 
 That&#39;s a messed up way of thinking about things. You meet a friendly crab and your first thought is ways to kill it?
 
 &lt;ul class=&quot;player-options&quot;&gt;
     &lt;li&gt;[[What is wrong with you?]]&lt;/li&gt;
-&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="21" name="What is wrong with you?" tags="" position="100,350" size="100,100">The crab is looking you over, its eyestalks twitching expectantly.
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="22" name="What is wrong with you?" tags="" position="225,350" size="100,100">The crab is looking you over, its eyestalks twitching expectantly.
 
 &lt;ul class=&quot;player-options&quot;&gt;
     &lt;li&gt;[[&quot;\&quot;What did you say?\&quot;&quot;|INTRO: Benny]]&lt;/li&gt;
-&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="22" name="Arrive in Pontchartrain Beach" tags="" position="225,350" size="100,100">You emerge from the jungle into &#39;&#39;Pontchartrain Beach&#39;&#39;, a small town built out of the ruins of an abandoned water park. You are initially in the central market area, at the &quot;shore&quot; of the &#39;&#39;deactivated wave pool&#39;&#39;.
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="23" name="Arrive in Pontchartrain Beach" tags="" position="350,350" size="100,100">You emerge from the jungle into &#39;&#39;Pontchartrain Beach&#39;&#39;, a small town built out of the ruins of an abandoned water park. You are initially in the central market area, at the &quot;shore&quot; of the &#39;&#39;deactivated wave pool&#39;&#39;.
 
 The market has a &#39;&#39;sparse crowd&#39;&#39; of (seeming) humans and (seeming) animals.
 &lt;&lt;if $pbFigureSeen isnot true  &gt;&gt;
@@ -407,15 +415,30 @@ There is a &#39;&#39;mysterious figure&#39;&#39; in the crowd.
 &lt;&lt;if $pbFigureSeen isnot true  &gt;&gt;
 [[Look at suspicious figure.]]
 &lt;&lt;/if&gt;&gt;
-[[Look at wave pool.]]</tw-passagedata><tw-passagedata pid="23" name="Look at crowd." tags="" position="350,350" size="100,100">Look at crowd.</tw-passagedata><tw-passagedata pid="24" name="Look at suspicious figure." tags="" position="650,825" size="100,100">The suspicious figure looks back. Then vanishes into the crowd. Weird.
+[[Look at wave pool.]]</tw-passagedata><tw-passagedata pid="24" name="Look at crowd." tags="" position="475,350" size="100,100">TK: Description of crowd.
+&lt;&lt;back&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="Look at suspicious figure." tags="" position="650,825" size="100,100">TK: The suspicious figure looks back. Then vanishes into the crowd. Weird.
 &lt;&lt;set $pbFigureSeen to true &gt;&gt;
-----
+&lt;&lt;back&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="Look at wave pool." tags="" position="725,350" size="100,100">TK: You walk to the Description of wave pool
+&lt;&lt;set $pbFigureSeen to true &gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="StorySubtitle" tags="" position="850,350" size="100,100">A science fiction story.</tw-passagedata><tw-passagedata pid="28" name="StoryAuthor" tags="" position="975,350" size="100,100">Shannon Ellery Hubbell</tw-passagedata><tw-passagedata pid="29" name="HO Part 1" tags="" position="1100,350" size="100,100">The early lives of &lt;strong&gt;Beverly &quot;Bev&quot; Lustig&lt;/strong&gt; are lost to history, perhaps intentionally. She is believed to have been at least three centuries young when she emerged as a public figure, and that she had gone through several names and lifetimes by then.
 
-[[Look around.|Arrive in Pontchartrain Beach]]</tw-passagedata><tw-passagedata pid="25" name="Look at wave pool." tags="" position="600,350" size="100,100">Description of</tw-passagedata><tw-passagedata pid="26" name="StorySubtitle" tags="" position="725,350" size="100,100">A science fiction story.</tw-passagedata><tw-passagedata pid="27" name="StoryAuthor" tags="" position="850,350" size="100,100">Shannon Ellery Hubbell</tw-passagedata><tw-passagedata pid="28" name="Start Screen" tags="start-page dark" position="975,350" size="100,100">!&quot;Tank Flintlock&quot;
+Lustig established herself as an underground lifemod arist in the hallowed &quot;Methone Scene,&quot; but quickly emerged as a mainstream and fashionable personal brand. Her cute/unnerving personalized familiars could be seen peeeking from the purses of influencers and hoi polloi alike and she amassed untold billions of credits.
+
+[[She is generally considered one of the key figures in NaNth Century culture.|HO Part 2]]</tw-passagedata><tw-passagedata pid="30" name="HO Part 2" tags="" position="1225,350" size="100,100">For such a high profile artist, trendsetter, and mogul, Lustig remained an enigma to all but the closest of confidants. She seldom granted interviews, and if she held any strong moral or political beliefs she kept them to herself.
+
+Beyond appearing at the occasional milquetoast charity gala, an occasional ingénue on her arm, she remained secluded in her Lunar mansion, releasing a new model of organic fashion accessory each year. Like clockwork. To inevitable acclaim and financial success.
+
+[[Then she stopped.|HO Part 3]]</tw-passagedata><tw-passagedata pid="31" name="HO Part 3" tags="" position="100,475" size="100,100">A year went by without a new release by Bev Lustig. Then a second and third. Her older models still outsold all the competitors and knockoffs, but there was general unease in the industry. Could the lifemod art world survive without a Lustigian singularity at its center?
+
+Her massive wealth and access to the finest of life extension technology made a hidden illness unlikely. But what could it be?
+
+[[Nobody knew.|HO Part 4]]</tw-passagedata><tw-passagedata pid="32" name="HO Part 4" tags="" position="225,475" size="100,100">[[The answer was far more prosaic.|HO Part 5]]</tw-passagedata><tw-passagedata pid="33" name="HO Part 5" tags="" position="350,475" size="100,100">Bev was bored.</tw-passagedata><tw-passagedata pid="34" name="Start Screen" tags="start-page dark" position="475,475" size="100,100">!&quot;Tank Flintlock&quot;
 !!By Shannon Ellery Hubbell
 
 
-!![[Let&#39;s get started.|PART 1: Falling Action]]</tw-passagedata><tw-passagedata pid="29" name="TEAPOT - Boot Sequence" tags="" position="1000,375" size="100,100">{{{
+!![[Let&#39;s get started.|PART 1: Falling Action]]
+
+
+[[HO Part 1]]</tw-passagedata><tw-passagedata pid="35" name="TEAPOT - Boot Sequence" tags="" position="1000,375" size="100,100">{{{
 ----------------------------------------------------
 Welcome to REDROCK OS!™ 
 ----------------------------------------------------
@@ -440,7 +463,7 @@ PLEASE SELECT AN OPTION.
 [[&quot;No idea what this does, but sure. Generate away.&quot;|TEAPOT - Generate]]
 &lt;&lt;else&gt;&gt;
 [[&#39;&quot;Generate it, I guess.&quot;&#39;|TEAPOT - Generate]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="TEAPOT - Generate" tags="" position="1225,350" size="100,100">{{{
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="TEAPOT - Generate" tags="" position="725,475" size="100,100">{{{
 ! CONNECTING TO REDROCKET...
 Please stand by...
 Please stand by...
@@ -454,7 +477,7 @@ Would you allow us to assemble a baseline from context? (Y/N)
 
 ----
 
-[[Y|TEAPOT - Wing It]]</tw-passagedata><tw-passagedata pid="31" name="TEAPOT - Wing It" tags="" position="100,475" size="100,100">{{{
+[[Y|TEAPOT - Wing It]]</tw-passagedata><tw-passagedata pid="37" name="TEAPOT - Wing It" tags="" position="850,475" size="100,100">{{{
 ----------------------------------------------------
 USER PROFILE
 ----------------------------------------------------
@@ -464,7 +487,7 @@ DoB: NaN
 ROLETAGS: { mercenary, gunForHire, tertiary, expositionFont }
 ALIAS(ES): &quot;a whole lot&quot;
 CURRENT STATUS: RA [Retroactively Apocryphal]
-}}}</tw-passagedata><tw-passagedata pid="32" name="Try to use TeaPot." tags="" position="225,475" size="100,100">!!!TeaPot
+}}}</tw-passagedata><tw-passagedata pid="38" name="Try to use TeaPot." tags="" position="975,475" size="100,100">!!!TeaPot
 
 You should try it!
 

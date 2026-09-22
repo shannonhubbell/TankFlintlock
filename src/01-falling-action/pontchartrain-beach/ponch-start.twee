@@ -16,16 +16,15 @@ There is a ''mysterious figure'' in the crowd.
 
 
 :: Look at crowd.
-
-Look at crowd.
+TK: Description of crowd.
+<<back>>
 
 :: Look at suspicious figure. {"position":"650,825","size":"100,100"}
-The suspicious figure looks back. Then vanishes into the crowd. Weird.
+TK: The suspicious figure looks back. Then vanishes into the crowd. Weird.
 <<set $pbFigureSeen to true >>
-----
-
-[[Look around.|Arrive in Pontchartrain Beach]] 
+<<back>>
 
 
 :: Look at wave pool.
-Description of
+TK: You walk to the Description of wave pool
+<<set $pbFigureSeen to true >>

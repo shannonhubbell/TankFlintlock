@@ -106,3 +106,13 @@ You nod slightly at Benny, then gesture towards the jungle.
 :: "After you." [jungle-light]
 "Don't mind if I do!" exaclaims Benny, who ambles into the jungle. You follow closely behind.
 
+<ul class="player-options">
+    <li>[[You fight the triffid.]]</li>
+</ul>
+
+:: You fight the triffid. [dark-green]
+You fight the triffid.
+
+[[You fight and kill it.|Arrive in Pontchartrain Beach]]
+
+[[You fight and are injured.]]
